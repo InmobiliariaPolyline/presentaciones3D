@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arquitectura — Portafolio de Proyectos</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-arquitectura">
+
+  <header class="topbar">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Volver al portafolio
+      </a>
+      <span class="sheet-tag">
+        <i class="fas fa-layer-group"></i> MÓDULO A — ARQUITECTURA
+      </span>
+    </div>
+  </header>
+
+  <!-- CLASE section-header-arquitectura -->
+  <section class="section-header section-header-arquitectura">
+    <div class="container">
+      <span class="code">
+        <i class="fas fa-file-alt"></i> HOJA A / ÍNDICE DE TARJETAS
+      </span>
+      <h1>
+        <i class="fas fa-building" style="color: var(--color-accent); margin-right: 12px;"></i>
+        Proyectos de Arquitectura
+      </h1>
+      <p>
+        Diseño, volumetría y presentación 3D de cada proyecto. Usa
+        <strong><i class="fas fa-images"></i> "Ver imágenes"</strong> para la galería fotográfica, o
+        <strong><i class="fas fa-cube"></i> "Explorar modelos 3D"</strong> para abrir el visor interactivo
+        en SketchUp o Revit.
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="sheet-index" id="grid-arquitectura"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span>
+        <i class="far fa-copyright"></i> Portafolio de proyectos
+      </span>
+      <a href="estructuras.html" class="back-link">
+        Ver módulo de Estructuras <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </footer>
+
+  <a
+    class="floating-whatsapp-btn"
+    href="https://wa.me/51943812536?text=Hola%2C%20quiero%20cotizar%20un%20modelado%203D%20para%20mi%20proyecto%20de%20arquitectura."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escríbenos por WhatsApp"
+    title="Escríbenos por WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Lightbox de galería -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <div class="lightbox-head">
+        <span id="lightbox-title">
+          <i class="fas fa-image"></i> <span id="lightbox-title-text"></span>
+        </span>
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="lightbox-frame">
+        <button class="lightbox-nav prev" onclick="stepLightbox(-1)" aria-label="Imagen anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="" />
+        <button class="lightbox-nav next" onclick="stepLightbox(1)" aria-label="Imagen siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <p class="lightbox-counter" id="lightbox-counter">
+        <i class="fas fa-image"></i> <span id="lightbox-counter-text"></span>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    renderSheetIndex("grid-arquitectura", proyectosArquitectura, "arquitectura");
+  </script>
+</body>
+</html>
