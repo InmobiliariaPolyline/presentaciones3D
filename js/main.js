@@ -1,4 +1,3 @@
-
 function renderSheetIndex(containerId, proyectos, prefix) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -20,8 +19,16 @@ function renderSheetIndex(containerId, proyectos, prefix) {
         <div class="body">
           <h3>${p.nombre}</h3>
 
-          <div class="meta">
-            ${p.software} · ${p.ubicacion}
+          <!-- METADATOS MEJORADOS CON ICONOS -->
+          <div class="project-meta">
+            <div class="meta-item">
+              <i class="fas fa-location-dot"></i>
+              <span>${p.ubicacion}</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-cube"></i>
+              <span>${p.software}</span>
+            </div>
           </div>
 
           <p class="desc">
@@ -38,14 +45,14 @@ function renderSheetIndex(containerId, proyectos, prefix) {
               <i class="fas fa-images"></i> Ver imágenes
             </button>
 
-            <!-- Dropdown de modelos 3D -->
+            <!-- Dropdown de modelo 3D -->
             ${hasVisores ? `
               <div class="viewer-dropdown">
                 <button
                   class="btn btn-solid viewer-toggle"
                   type="button"
                   onclick="toggleDropdown(this)">
-                  <i class="fas fa-cube"></i> Explorar modelos 3D 
+                  <i class="fas fa-cube"></i> Explorar modelo 3D 
                   <i class="fas fa-chevron-down dropdown-icon"></i>
                 </button>
 
@@ -70,7 +77,7 @@ function renderSheetIndex(containerId, proyectos, prefix) {
                 disabled
                 style="opacity:0.4; cursor:not-allowed;"
               >
-                <i class="fas fa-cube"></i> Sin modelos 3D
+                <i class="fas fa-cube"></i> Sin modelo 3D
               </button>
             `}
 

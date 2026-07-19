@@ -1107,11 +1107,43 @@ a {
   color: var(--color-accent);
 }
 
-.sheet-card .meta {
+.sheet-card .project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 4px 0 6px;
+}
+
+.sheet-card .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.02em;
+}
+
+.sheet-card .meta-item i {
+  font-size: 0.85rem;
   color: var(--color-text-muted);
-  letter-spacing: 0.03em;
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sheet-card .meta-item i.fa-location-dot {
+  color: var(--color-accent);
+  opacity: 0.8;
+}
+
+.sheet-card .meta-item i.fa-cube {
+  color: var(--color-accent);
+  opacity: 0.6;
+}
+
+.sheet-card .meta-item span {
+  color: var(--color-text-secondary);
 }
 
 .sheet-card p.desc {
@@ -1296,7 +1328,7 @@ a {
   margin-top: 12px;
 }
 
-/* DROPDOWN - Modelos 3D */
+/* DROPDOWN - Modelo 3D */
 .viewer-dropdown {
   position: relative;
   display: inline-block;
