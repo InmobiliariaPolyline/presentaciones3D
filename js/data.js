@@ -126,7 +126,7 @@ const proyectosEstructuras = [
     visores3D: [
       {
         nombre: "Modelo Estructural",
-        url: "https://autode.sk/4am5EXp"
+        url: "https://autode.sk/4bUCfUX"
       }
     ]
   },
@@ -155,7 +155,7 @@ const proyectosEstructuras = [
     visores3D: [
       {
         nombre: "Modelo Estructural",
-        url: "https://autode.sk/43Q9swr"
+        url: "https://autode.sk/4zt5fNu"
       }
     ]
   },
@@ -182,7 +182,7 @@ const proyectosEstructuras = [
     visores3D: [
       {
         nombre: "Modelo Estructural",
-        url: "https://autode.sk/4gnpxRN"
+        url: "https://autode.sk/4gEXmgx"
       }
     ]
   },
@@ -209,7 +209,7 @@ const proyectosEstructuras = [
     visores3D: [
       {
         nombre: "Modelo Estructural",
-        url: "https://autode.sk/3QCfVbh"
+        url: "https://autode.sk/3SDYHLz"
       }
     ]
   }
