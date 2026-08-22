@@ -98,8 +98,43 @@ const proyectosArquitectura = [
         url: "https://app.sketchup.com/share/tc/northAmerica/M-GNk6ijork?source=desktop&stoken=hM5Hcm_RQFeGSGGYF3WSdwY9nl4KGHSHmhNiDA92t4IuXfGfc6zpxKpGjeDu7cW1"
       }
     ]
-  }
+  },
+
+  {
+    codigo: "A-04",
+
+    nombre: "Proyecto el Edén",
+
+    ubicacion: "Comas, Lima",
+
+    software: "SketchUp",
+
+    descripcion:
+      "Proyecto arquitectónico desarrollado en SketchUp para la visualización integral de fachadas, distribución de ambientes (que incluyen salas de reuniones y múltiples dormitorios) y recorrido espacial de la edificación ubicada en el distrito de Comas, Lima.",
+
+    imagenes: [
+
+      // PORTADA
+      "https://res.cloudinary.com/qn9splvu/image/upload/v1787282545/1_imagen.png",
+
+      // GALERÍA
+      "https://res.cloudinary.com/qn9splvu/image/upload/v1787282545/2_imagen.png",
+      "https://res.cloudinary.com/qn9splvu/image/upload/v1787282550/3_imagen.png",
+      "https://res.cloudinary.com/qn9splvu/image/upload/v1787282547/4__imagen.png",
+      "https://res.cloudinary.com/qn9splvu/image/upload/v1787282546/5_imagen.png",
+      "https://res.cloudinary.com/qn9splvu/image/upload/v1787282548/6_imagen.png",
+      "https://res.cloudinary.com/qn9splvu/image/upload/v1787282549/7_imagen.png",
+    ],
+
+    visores3D: [
+      {
+        nombre: "Modelo Arquitectónico",
+        url: "https://app.sketchup.com/share/tc/northAmerica/kGAooIyUdvM?source=desktop&stoken=2leQPB7VMThSN8DgOKqS60Uvmtv7U6yZUqBjPk15Zuc9Z0sSv4MvorJJu1E1kgdZ"
+      }
+    ]
+  },
 ];
+
 
 const proyectosEstructuras = [
   {
